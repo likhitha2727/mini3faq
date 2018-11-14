@@ -9,11 +9,22 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
+    // public function run()
+    // {
+
+    // $this->call(UsersTableSeeder::class);
+    //$this->call(QuestionsTableSeeder::class);
+    // $this->call(AnswersTableSeeder::class);
+    // }
+//}
+
     public function run()
     {
-
-        $this->call(UsersTableSeeder::class);
-        $this->call(QuestionsTableSeeder::class);
-        $this->call(AnswersTableSeeder::class);
+        $this->call([
+            UsersTableSeeder::class,
+            QuestionsTableSeeder::class,
+            AnswersTableSeeder::class,
+        ]);
     }
 }
+
