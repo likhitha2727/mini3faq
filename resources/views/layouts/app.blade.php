@@ -84,7 +84,7 @@
         @include('flash.messages')
         @include('flash.status')
     </div>
-    
+
     @yield('content')
 </main>
 </div>
