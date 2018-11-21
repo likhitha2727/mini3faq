@@ -92,6 +92,7 @@ class QuestionController extends Controller
         ]);
         $question->body = $request->body;
         $question->save();
+
         return redirect()->route('questions.show',['question_id' => $question->id])->with('message', 'Saved');
     }
     /**
@@ -102,7 +103,7 @@ class QuestionController extends Controller
      */
     public function destroy(Question $question)
     {
-        //
+
         $question->delete();
         return redirect()->route('home')->with('message', 'Deleted');
     }
