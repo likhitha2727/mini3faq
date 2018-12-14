@@ -13,7 +13,7 @@ class LoginPageTest extends DuskTestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testLoginPage()
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('http://localhost:8000')

@@ -39,7 +39,7 @@ class AnswerWorkTest extends DuskTestCase
                 ->assertSee('Updated')
                 ->press('#submit')
                 ->assertSee('Delete')
-                ->press('#navbarDropdown')
+                ->click('#navbarDropdown')
                 ->clickLink('Logout')
                 ->assertSee('Laravel');
         });

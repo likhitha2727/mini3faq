@@ -62,7 +62,7 @@ class QuestionWorkTest extends DuskTestCase
                 ->assertSee('Saved')
                 ->press('#submit')
                 ->assertSee('Deleted')
-                ->press('#navbarDropdown')
+                ->click('#navbarDropdown')
                 ->clickLink('Logout')
                 ->assertSee('Laravel');
         });

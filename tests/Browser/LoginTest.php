@@ -22,7 +22,7 @@ class LoginTest extends DuskTestCase
                 ->value('#password', 'likhitha')
                 ->press('button[type="submit"]')
                 ->assertSee('Questions')
-                ->press('#navbarDropdown')
+                ->click('#navbarDropdown')
                 ->clickLink('Logout')
                 ->assertSee('Laravel');
         });

@@ -17,7 +17,7 @@ class WelcomeTest extends DuskTestCase
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('http://localhost:8000')
-                    ->assertSee('Laravel');
+                    ->assertTitleContains('Laravel');
         });
     }
 }
