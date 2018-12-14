@@ -18,11 +18,11 @@ class LoginTest extends DuskTestCase
         $this->browse(function (Browser $browser) {
             $browser->visit('http://localhost:8000')
                 ->clickLink('Login')
-                ->value('#email', 'sn123456@njit.com')
+                ->value('#email', 's1234567@njit.com')
                 ->value('#password', 'likhitha')
                 ->press('button[type="submit"]')
                 ->assertSee('Questions')
-                ->click('#navbarDropdown')
+                ->press('#navbarDropdown')
                 ->clickLink('Logout')
                 ->assertSee('Laravel');
         });
