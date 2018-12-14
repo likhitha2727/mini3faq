@@ -15,7 +15,7 @@ class QuestionWorkTest extends DuskTestCase
      */
 
 
-    public function testExample()
+    public function testQuestion()
     {
 
         /*$this->browse(function (Browser $browser) {
