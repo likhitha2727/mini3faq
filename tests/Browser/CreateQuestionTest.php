@@ -25,6 +25,7 @@ class CreateQuestionTest extends DuskTestCase
                 ->assertSee('Create Question')
                 ->value('#body', 'whatdusk')
                 ->press('#submit')
+                ->assertSee('IT WORKS!')
                 ->click('#navbarDropdown')
                 ->clickLink('Logout')
                 ->assertSee('Laravel');
